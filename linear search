@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int i,a,n;
+    printf("Enter number of elements of an array:\n");
+    scanf("%d",&n);
+    int array[n];
+    printf("Enter elements: \n");
+    for (i=0; i<n; ++i)
+    scanf("%d", &array[i]);
+    printf("Enter element to search: ");
+    scanf("%d", &a);
+    for (i=0; i<n; ++i)
+        if (a== array[i])
+            break;
+    if (i<n)
+        printf("element found at index %d", i+1);
+    else
+        printf("element does not exist");
+    return 0;
+}
